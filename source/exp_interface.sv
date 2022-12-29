@@ -70,7 +70,6 @@ module exp_interface (clk, rst_n, address, readdata, writedata);
             endcase
         end 
     end
-
 endmodule: exp_interface
 
 // the read signal is an input from the CPU; it lets this module know it can read the data on the address bus 
