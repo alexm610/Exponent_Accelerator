@@ -38,10 +38,7 @@ module enable_register (in, out, enable, clock, reset_n);
         end else begin
             if (enable) begin
                 out <= in;
-            end else begin
-                out <= out;
             end
         end
     end
-
 endmodule: enable_register
