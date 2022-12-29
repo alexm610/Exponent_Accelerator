@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Alex Manak/Desktop/Math/Verilog/Exponent_Accelerator/source
+venable_register
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1672281664
+!i10b 1
+!s100 IFG>2=SSN>AAMQNN5>Z7E0
+ILcmg@]YHf?leRnnkT1z8J2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 exponent_sv_unit
+S1
+Z4 dc:/Users/Alex Manak/Desktop/Math/Verilog/Exponent_Accelerator/source
+Z5 w1672281664
+Z6 8c:\Users\Alex Manak\Desktop\Math\Verilog\Exponent_Accelerator\source\exponent.sv
+Z7 Fc:\Users\Alex Manak\Desktop\Math\Verilog\Exponent_Accelerator\source\exponent.sv
+L0 28
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1672281664.000000
+Z10 !s107 c:\Users\Alex Manak\Desktop\Math\Verilog\Exponent_Accelerator\source\exponent.sv|
+Z11 !s90 -nologo|-work|work|c:\Users\Alex Manak\Desktop\Math\Verilog\Exponent_Accelerator\source\exponent.sv|
+!i113 1
+Z12 o-nologo -work work
+Z13 tCvgOpt 0
+vexponent
+R0
+R1
+!i10b 1
+!s100 1U;YzA7B]G?NeS8ihW1?d2
+IbkLaeNiOcZN@5G<JilffE0
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
