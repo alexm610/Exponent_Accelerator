@@ -4,7 +4,7 @@ module tb_exponent;
     logic clock, reset_n, enable, ready;
     logic [31:0] x, a, p;
 
-    exponent dut (.*);
+    exponent_accelerator dut (.*);
 
     initial forever begin
         clock = 1; #1;
@@ -13,8 +13,8 @@ module tb_exponent;
 
     initial begin
         enable = 0;
-        x = 32'd2;
-        a = 32'd30;
+        x = 32'd5;
+        a = 32'd50;
         reset_n = 1; #4;
         reset_n = 0; #2;
         reset_n = 1; #10;
