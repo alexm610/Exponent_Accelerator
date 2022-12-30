@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_jtag_uart_0_sim_scfifo_w (
+module Exponent_accelerator_jtag_uart_0_sim_scfifo_w (
                                                        // inputs:
                                                         clk,
                                                         fifo_wdata,
@@ -75,7 +75,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_jtag_uart_0_scfifo_w (
+module Exponent_accelerator_jtag_uart_0_scfifo_w (
                                                    // inputs:
                                                     clk,
                                                     fifo_clear,
@@ -109,7 +109,7 @@ wire    [  5: 0] wfifo_used;
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  exponent_accelerator_jtag_uart_0_sim_scfifo_w the_exponent_accelerator_jtag_uart_0_sim_scfifo_w
+  Exponent_accelerator_jtag_uart_0_sim_scfifo_w the_Exponent_accelerator_jtag_uart_0_sim_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -161,7 +161,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_jtag_uart_0_sim_scfifo_r (
+module Exponent_accelerator_jtag_uart_0_sim_scfifo_r (
                                                        // inputs:
                                                         clk,
                                                         fifo_rd,
@@ -240,7 +240,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_jtag_uart_0_scfifo_r (
+module Exponent_accelerator_jtag_uart_0_scfifo_r (
                                                    // inputs:
                                                     clk,
                                                     fifo_clear,
@@ -276,7 +276,7 @@ wire    [  5: 0] rfifo_used;
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  exponent_accelerator_jtag_uart_0_sim_scfifo_r the_exponent_accelerator_jtag_uart_0_sim_scfifo_r
+  Exponent_accelerator_jtag_uart_0_sim_scfifo_r the_Exponent_accelerator_jtag_uart_0_sim_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -328,7 +328,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_jtag_uart_0 (
+module Exponent_accelerator_jtag_uart_0 (
                                           // inputs:
                                            av_address,
                                            av_chipselect,
@@ -406,7 +406,7 @@ wire             wr_rfifo;
   assign rd_wfifo = r_ena & ~wfifo_empty;
   assign wr_rfifo = t_ena & ~rfifo_full;
   assign fifo_clear = ~rst_n;
-  exponent_accelerator_jtag_uart_0_scfifo_w the_exponent_accelerator_jtag_uart_0_scfifo_w
+  Exponent_accelerator_jtag_uart_0_scfifo_w the_Exponent_accelerator_jtag_uart_0_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -419,7 +419,7 @@ wire             wr_rfifo;
       .wfifo_used  (wfifo_used)
     );
 
-  exponent_accelerator_jtag_uart_0_scfifo_r the_exponent_accelerator_jtag_uart_0_scfifo_r
+  Exponent_accelerator_jtag_uart_0_scfifo_r the_Exponent_accelerator_jtag_uart_0_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -555,7 +555,7 @@ wire             wr_rfifo;
 
 //synthesis translate_on
 //synthesis read_comments_as_HDL on
-//  alt_jtag_atlantic exponent_accelerator_jtag_uart_0_alt_jtag_atlantic
+//  alt_jtag_atlantic Exponent_accelerator_jtag_uart_0_alt_jtag_atlantic
 //    (
 //      .clk (clk),
 //      .r_dat (r_dat),
@@ -568,10 +568,10 @@ wire             wr_rfifo;
 //      .t_pause (t_pause)
 //    );
 //
-//  defparam exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.INSTANCE_ID = 0,
-//           exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
-//           exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
-//           exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
+//  defparam Exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.INSTANCE_ID = 0,
+//           Exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
+//           Exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
+//           Exponent_accelerator_jtag_uart_0_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
 //
 //  always @(posedge clk or negedge rst_n)
 //    begin

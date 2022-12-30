@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module exponent_accelerator_onchip_memory2_0 (
+module Exponent_accelerator_onchip_memory2_0 (
                                                // inputs:
                                                 address,
                                                 byteenable,
@@ -36,7 +36,7 @@ module exponent_accelerator_onchip_memory2_0 (
                                              )
 ;
 
-  parameter INIT_FILE = "exponent_accelerator_onchip_memory2_0.hex";
+  parameter INIT_FILE = "Exponent_accelerator_onchip_memory2_0.hex";
 
 
   output  [ 31: 0] readdata;

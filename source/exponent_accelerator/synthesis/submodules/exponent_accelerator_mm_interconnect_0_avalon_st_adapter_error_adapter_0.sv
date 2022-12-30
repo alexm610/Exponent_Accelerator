@@ -38,7 +38,7 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:        exponent_accelerator_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+//   output_name:        Exponent_accelerator_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 //   use_ready:          true
 //   use_packets:        false
 //   use_empty:          0
@@ -63,7 +63,7 @@
 
 
 
-module exponent_accelerator_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+module Exponent_accelerator_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 (
  // Interface: in
  output reg         in_ready,

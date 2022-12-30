@@ -23,31 +23,31 @@
 # Set TCL Path Variables 
 #**************************************************************
 
-set 	exponent_accelerator_nios2_gen2_0_cpu 	exponent_accelerator_nios2_gen2_0_cpu:*
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci 	exponent_accelerator_nios2_gen2_0_cpu_nios2_oci:the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci_break 	exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break:the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break
-set 	exponent_accelerator_nios2_gen2_0_cpu_ocimem 	exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem:the_exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci_debug 	exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug:the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug
-set 	exponent_accelerator_nios2_gen2_0_cpu_wrapper 	exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper:the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper
-set 	exponent_accelerator_nios2_gen2_0_cpu_jtag_tck 	exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck:the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck
-set 	exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk 	exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk:the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci_path 	 [format "%s|%s" $exponent_accelerator_nios2_gen2_0_cpu $exponent_accelerator_nios2_gen2_0_cpu_oci]
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci_break_path 	 [format "%s|%s" $exponent_accelerator_nios2_gen2_0_cpu_oci_path $exponent_accelerator_nios2_gen2_0_cpu_oci_break]
-set 	exponent_accelerator_nios2_gen2_0_cpu_ocimem_path 	 [format "%s|%s" $exponent_accelerator_nios2_gen2_0_cpu_oci_path $exponent_accelerator_nios2_gen2_0_cpu_ocimem]
-set 	exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path 	 [format "%s|%s" $exponent_accelerator_nios2_gen2_0_cpu_oci_path $exponent_accelerator_nios2_gen2_0_cpu_oci_debug]
-set 	exponent_accelerator_nios2_gen2_0_cpu_jtag_tck_path 	 [format "%s|%s|%s" $exponent_accelerator_nios2_gen2_0_cpu_oci_path $exponent_accelerator_nios2_gen2_0_cpu_wrapper $exponent_accelerator_nios2_gen2_0_cpu_jtag_tck]
-set 	exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path 	 [format "%s|%s|%s" $exponent_accelerator_nios2_gen2_0_cpu_oci_path $exponent_accelerator_nios2_gen2_0_cpu_wrapper $exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk]
-set 	exponent_accelerator_nios2_gen2_0_cpu_jtag_sr 	 [format "%s|*sr" $exponent_accelerator_nios2_gen2_0_cpu_jtag_tck_path]
+set 	Exponent_accelerator_nios2_gen2_0_cpu 	Exponent_accelerator_nios2_gen2_0_cpu:*
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci 	Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci:the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci_break 	Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break:the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break
+set 	Exponent_accelerator_nios2_gen2_0_cpu_ocimem 	Exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem:the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci_debug 	Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug:the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug
+set 	Exponent_accelerator_nios2_gen2_0_cpu_wrapper 	Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper:the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper
+set 	Exponent_accelerator_nios2_gen2_0_cpu_jtag_tck 	Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck:the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck
+set 	Exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk 	Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk:the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci_path 	 [format "%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu $Exponent_accelerator_nios2_gen2_0_cpu_oci]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci_break_path 	 [format "%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu_oci_path $Exponent_accelerator_nios2_gen2_0_cpu_oci_break]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_ocimem_path 	 [format "%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu_oci_path $Exponent_accelerator_nios2_gen2_0_cpu_ocimem]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path 	 [format "%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu_oci_path $Exponent_accelerator_nios2_gen2_0_cpu_oci_debug]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_jtag_tck_path 	 [format "%s|%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu_oci_path $Exponent_accelerator_nios2_gen2_0_cpu_wrapper $Exponent_accelerator_nios2_gen2_0_cpu_jtag_tck]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path 	 [format "%s|%s|%s" $Exponent_accelerator_nios2_gen2_0_cpu_oci_path $Exponent_accelerator_nios2_gen2_0_cpu_wrapper $Exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk]
+set 	Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr 	 [format "%s|*sr" $Exponent_accelerator_nios2_gen2_0_cpu_jtag_tck_path]
 
 #**************************************************************
 # Set False Paths
 #**************************************************************
 
-set_false_path -from [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_oci_break_path|break_readreg*] -to [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*]
-set_false_path -from [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|*resetlatch]     -to [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[33]]
-set_false_path -from [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_ready]  -to [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[0]]
-set_false_path -from [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_error]  -to [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[34]]
-set_false_path -from [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_ocimem_path|*MonDReg*] -to [get_keepers *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*]
-set_false_path -from *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*    -to *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path|*jdo*
-set_false_path -from sld_hub:*|irf_reg* -to *$exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path|ir*
-set_false_path -from sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] -to *$exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_go
+set_false_path -from [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_oci_break_path|break_readreg*] -to [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*]
+set_false_path -from [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|*resetlatch]     -to [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[33]]
+set_false_path -from [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_ready]  -to [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[0]]
+set_false_path -from [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_error]  -to [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr[34]]
+set_false_path -from [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_ocimem_path|*MonDReg*] -to [get_keepers *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*]
+set_false_path -from *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sr*    -to *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path|*jdo*
+set_false_path -from sld_hub:*|irf_reg* -to *$Exponent_accelerator_nios2_gen2_0_cpu_jtag_sysclk_path|ir*
+set_false_path -from sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] -to *$Exponent_accelerator_nios2_gen2_0_cpu_oci_debug_path|monitor_go

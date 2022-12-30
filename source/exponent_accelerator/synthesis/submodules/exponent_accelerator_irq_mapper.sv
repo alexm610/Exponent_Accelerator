@@ -28,7 +28,7 @@
 
 `timescale 1 ns / 1 ns
 
-module exponent_accelerator_irq_mapper
+module Exponent_accelerator_irq_mapper
 (
     // -------------------
     // Clock & Reset
