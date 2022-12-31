@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk (
+module exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk (
                                                                   // inputs:
                                                                    clk,
                                                                    ir_in,

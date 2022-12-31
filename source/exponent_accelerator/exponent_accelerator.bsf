@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 0 0 288 464)
-	(text "Exponent_accelerator" (rect 80 -1 167 11)(font "Arial" (font_size 10)))
+	(text "exponent_accelerator" (rect 81 -1 165 11)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 448 20 460)(font "Arial" ))
 	(port
 		(pt 0 72)
@@ -115,7 +115,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "reset_n" (rect 117 387 276 784)(font "Arial" (color 0 0 0)))
 		(text "switch" (rect 76 403 188 819)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 117 427 270 864)(font "Arial" (color 0 0 0)))
-		(text " Exponent_accelerator " (rect 191 448 514 906)(font "Arial" ))
+		(text " exponent_accelerator " (rect 193 448 518 906)(font "Arial" ))
 		(line (pt 112 32)(pt 176 32)(line_width 1))
 		(line (pt 176 32)(pt 176 448)(line_width 1))
 		(line (pt 112 448)(pt 176 448)(line_width 1))

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.0" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_0.xsd">
-<name>Exponent_accelerator</name>
+<name>exponent_accelerator</name>
 <peripherals>
 <peripheral>
-      <name>Exponent_accelerator_jtag_uart_0_avalon_jtag_slave_altera_avalon_jtag_uart</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_jtag_uart_0_avalon_jtag_slave_altera_avalon_jtag_uart</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>8</size>
@@ -91,7 +91,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_SW_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_SW_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -209,7 +209,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_LEDR_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_LEDR_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -327,7 +327,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX5_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX5_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -445,7 +445,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX4_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX4_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -563,7 +563,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX3_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX3_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -681,7 +681,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX2_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX2_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -799,7 +799,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX1_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX1_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>
@@ -917,7 +917,7 @@
     </registers>
    </peripheral>
   <peripheral>
-      <name>Exponent_accelerator_HEX0_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
+      <name>exponent_accelerator_HEX0_s1_altera_avalon_pio</name><baseAddress>0x00000000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>32</size>

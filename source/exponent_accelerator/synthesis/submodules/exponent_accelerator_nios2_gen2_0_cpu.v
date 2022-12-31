@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a_module (
+module exponent_accelerator_nios2_gen2_0_cpu_register_bank_a_module (
                                                                       // inputs:
                                                                        clock,
                                                                        data,
@@ -84,7 +84,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b_module (
+module exponent_accelerator_nios2_gen2_0_cpu_register_bank_b_module (
                                                                       // inputs:
                                                                        clock,
                                                                        data,
@@ -150,7 +150,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug (
                                                                // inputs:
                                                                 clk,
                                                                 dbrk_break,
@@ -292,7 +292,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break (
                                                                // inputs:
                                                                 clk,
                                                                 dbrk_break,
@@ -585,7 +585,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk (
                                                               // inputs:
                                                                D_valid,
                                                                E_valid,
@@ -792,7 +792,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk (
                                                               // inputs:
                                                                E_st_data,
                                                                av_ld_data_aligned_filtered,
@@ -979,7 +979,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace (
                                                                 // inputs:
                                                                  clk,
                                                                  dbrk_traceoff,
@@ -1112,7 +1112,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_td_mode (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_td_mode (
                                                                  // inputs:
                                                                   ctrl,
 
@@ -1180,7 +1180,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace (
                                                                 // inputs:
                                                                  clk,
                                                                  cpu_d_address,
@@ -1225,8 +1225,8 @@ wire    [  3: 0] td_mode_trc_ctrl;
   assign cpu_d_writedata_0_padded = cpu_d_writedata | 32'b0;
   assign cpu_d_readdata_0_padded = cpu_d_readdata | 32'b0;
   assign cpu_d_address_0_padded = cpu_d_address | 32'b0;
-  //Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode, which is an e_instance
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_td_mode Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode
+  //exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode, which is an e_instance
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_td_mode exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_trc_ctrl_td_mode
     (
       .ctrl    (trc_ctrl[8 : 0]),
       .td_mode (td_mode_trc_ctrl)
@@ -1262,7 +1262,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt (
                                                                               // inputs:
                                                                                atm_valid,
                                                                                dtm_valid,
@@ -1334,7 +1334,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc (
                                                                         // inputs:
                                                                          ge2_free,
                                                                          ge3_free,
@@ -1377,7 +1377,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc (
                                                                       // inputs:
                                                                        empty,
                                                                        ge2_free,
@@ -1424,7 +1424,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo (
                                                               // inputs:
                                                                atm,
                                                                clk,
@@ -1537,7 +1537,7 @@ wire    [ 35: 0] tw;
   assign empty = ~|fifo_cnt;
   assign fifo_wrptr_plus1 = fifo_wrptr + 1;
   assign fifo_wrptr_plus2 = fifo_wrptr + 2;
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
     (
       .atm_valid            (atm_valid),
       .compute_input_tm_cnt (compute_input_tm_cnt),
@@ -1546,7 +1546,7 @@ wire    [ 35: 0] tw;
     );
 
   assign input_tm_cnt = compute_input_tm_cnt;
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
     (
       .fifo_wrptr_inc (fifo_wrptr_inc),
       .ge2_free       (ge2_free),
@@ -1554,7 +1554,7 @@ wire    [ 35: 0] tw;
       .input_tm_cnt   (input_tm_cnt)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
     (
       .empty        (empty),
       .fifo_cnt_inc (fifo_cnt_inc),
@@ -1910,7 +1910,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib (
                                                              // outputs:
                                                               tr_data
                                                            )
@@ -1933,7 +1933,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im (
                                                             // inputs:
                                                              clk,
                                                              jrst_n,
@@ -2003,7 +2003,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_performance_monitors 
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_performance_monitors 
 ;
 
 
@@ -2020,7 +2020,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg (
                                                                 // inputs:
                                                                  address,
                                                                  clk,
@@ -2113,7 +2113,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram_module (
+module exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram_module (
                                                                     // inputs:
                                                                      address,
                                                                      byteenable,
@@ -2178,7 +2178,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem (
                                                             // inputs:
                                                              address,
                                                              byteenable,
@@ -2319,8 +2319,8 @@ reg              waitrequest /* synthesis ALTERA_ATTRIBUTE = "SUPPRESS_DA_RULE_I
   assign ociram_byteenable = jtag_ram_access ? 4'b1111 : byteenable;
   assign ociram_wr_en = jtag_ram_access ? jtag_ram_wr : avalon_ram_wr;
   assign ociram_reset_req = reset_req & ~jtag_ram_access;
-//Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram, which is an nios_sp_ram
-Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram_module Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram
+//exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram, which is an nios_sp_ram
+exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram_module exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram
   (
     .address    (ociram_addr),
     .byteenable (ociram_byteenable),
@@ -2333,9 +2333,9 @@ Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram_module Exponent_accelerator_
 
 //synthesis translate_off
 `ifdef NO_PLI
-defparam Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_ociram_default_contents.dat";
+defparam exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_ociram_default_contents.dat";
 `else
-defparam Exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_ociram_default_contents.hex";
+defparam exponent_accelerator_nios2_gen2_0_cpu_ociram_sp_ram.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_ociram_default_contents.hex";
 `endif
 //synthesis translate_on
   assign cfgrom_readdata = (MonAReg[4 : 2] == 3'd0)? 32'h00000020 :
@@ -2359,7 +2359,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci (
+module exponent_accelerator_nios2_gen2_0_cpu_nios2_oci (
                                                          // inputs:
                                                           D_valid,
                                                           E_st_data,
@@ -2506,7 +2506,7 @@ wire             xbrk_traceoff;
 wire             xbrk_traceon;
 wire             xbrk_trigout;
 wire             xbrk_wrap_traceoff;
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_debug
     (
       .clk                  (clk),
       .dbrk_break           (dbrk_break),
@@ -2530,7 +2530,7 @@ wire             xbrk_wrap_traceoff;
       .xbrk_break           (xbrk_break)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_break
     (
       .break_readreg          (break_readreg),
       .clk                    (clk),
@@ -2560,7 +2560,7 @@ wire             xbrk_wrap_traceoff;
       .xbrk_goto1             (xbrk_goto1)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_xbrk
     (
       .D_valid         (D_valid),
       .E_valid         (E_valid),
@@ -2581,7 +2581,7 @@ wire             xbrk_wrap_traceoff;
       .xbrk_trigout    (xbrk_trigout)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dbrk
     (
       .E_st_data                   (E_st_data),
       .av_ld_data_aligned_filtered (av_ld_data_aligned_filtered),
@@ -2607,7 +2607,7 @@ wire             xbrk_wrap_traceoff;
       .reset_n                     (reset_n)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_itrace
     (
       .clk                   (clk),
       .dbrk_traceoff         (dbrk_traceoff),
@@ -2623,7 +2623,7 @@ wire             xbrk_wrap_traceoff;
       .xbrk_wrap_traceoff    (xbrk_wrap_traceoff)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_dtrace
     (
       .atm             (atm),
       .clk             (clk),
@@ -2638,7 +2638,7 @@ wire             xbrk_wrap_traceoff;
       .trc_ctrl        (trc_ctrl)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_fifo
     (
       .atm           (atm),
       .clk           (clk),
@@ -2653,12 +2653,12 @@ wire             xbrk_wrap_traceoff;
       .tw            (tw)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_pib
     (
       .tr_data (tr_data)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci_im
     (
       .clk                (clk),
       .jrst_n             (jrst_n),
@@ -2672,7 +2672,7 @@ wire             xbrk_wrap_traceoff;
       .xbrk_wrap_traceoff (xbrk_wrap_traceoff)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg the_exponent_accelerator_nios2_gen2_0_cpu_nios2_avalon_reg
     (
       .address              (address),
       .clk                  (clk),
@@ -2691,7 +2691,7 @@ wire             xbrk_wrap_traceoff;
       .writedata            (writedata)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem the_exponent_accelerator_nios2_gen2_0_cpu_nios2_ocimem
     (
       .MonDReg                 (MonDReg),
       .address                 (address),
@@ -2776,7 +2776,7 @@ wire             xbrk_wrap_traceoff;
     end
 
 
-  Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper
+  exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper
     (
       .MonDReg                 (MonDReg),
       .break_readreg           (break_readreg),
@@ -2831,7 +2831,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu (
+module exponent_accelerator_nios2_gen2_0_cpu (
                                                // inputs:
                                                 clk,
                                                 d_readdata,
@@ -3512,8 +3512,8 @@ wire             oci_single_step_mode;
 wire             oci_tb_hbreak_req;
 wire             test_has_ended;
 reg              wait_for_one_post_bret_inst;
-  //the_Exponent_accelerator_nios2_gen2_0_cpu_test_bench, which is an e_instance
-  Exponent_accelerator_nios2_gen2_0_cpu_test_bench the_Exponent_accelerator_nios2_gen2_0_cpu_test_bench
+  //the_exponent_accelerator_nios2_gen2_0_cpu_test_bench, which is an e_instance
+  exponent_accelerator_nios2_gen2_0_cpu_test_bench the_exponent_accelerator_nios2_gen2_0_cpu_test_bench
     (
       .D_iw                          (D_iw),
       .D_iw_op                       (D_iw_op),
@@ -4049,8 +4049,8 @@ reg              wait_for_one_post_bret_inst;
   assign R_rf_b = R_rf_b_q;
   assign W_rf_wren = (R_wr_dst_reg & W_valid) | W_rf_ecc_valid_any | ~reset_n;
   assign W_rf_wr_data = R_ctrl_ld ? av_ld_data_aligned_filtered : W_wr_data;
-//Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a, which is an nios_sdp_ram
-Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a_module Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a
+//exponent_accelerator_nios2_gen2_0_cpu_register_bank_a, which is an nios_sdp_ram
+exponent_accelerator_nios2_gen2_0_cpu_register_bank_a_module exponent_accelerator_nios2_gen2_0_cpu_register_bank_a
   (
     .clock     (clk),
     .data      (W_rf_wr_data),
@@ -4062,13 +4062,13 @@ Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a_module Exponent_accelerato
 
 //synthesis translate_off
 `ifdef NO_PLI
-defparam Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_rf_ram_a.dat";
+defparam exponent_accelerator_nios2_gen2_0_cpu_register_bank_a.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_rf_ram_a.dat";
 `else
-defparam Exponent_accelerator_nios2_gen2_0_cpu_register_bank_a.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_rf_ram_a.hex";
+defparam exponent_accelerator_nios2_gen2_0_cpu_register_bank_a.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_rf_ram_a.hex";
 `endif
 //synthesis translate_on
-//Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b, which is an nios_sdp_ram
-Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b_module Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b
+//exponent_accelerator_nios2_gen2_0_cpu_register_bank_b, which is an nios_sdp_ram
+exponent_accelerator_nios2_gen2_0_cpu_register_bank_b_module exponent_accelerator_nios2_gen2_0_cpu_register_bank_b
   (
     .clock     (clk),
     .data      (W_rf_wr_data),
@@ -4080,9 +4080,9 @@ Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b_module Exponent_accelerato
 
 //synthesis translate_off
 `ifdef NO_PLI
-defparam Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_rf_ram_b.dat";
+defparam exponent_accelerator_nios2_gen2_0_cpu_register_bank_b.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_rf_ram_b.dat";
 `else
-defparam Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b.lpm_file = "Exponent_accelerator_nios2_gen2_0_cpu_rf_ram_b.hex";
+defparam exponent_accelerator_nios2_gen2_0_cpu_register_bank_b.lpm_file = "exponent_accelerator_nios2_gen2_0_cpu_rf_ram_b.hex";
 `endif
 //synthesis translate_on
   assign R_src1 = (((R_ctrl_br & E_valid_from_R) | (R_ctrl_retaddr & R_valid)))? {F_pc_plus_one, 2'b00} :
@@ -4543,7 +4543,7 @@ defparam Exponent_accelerator_nios2_gen2_0_cpu_register_bank_b.lpm_file = "Expon
     end
 
 
-  Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci the_Exponent_accelerator_nios2_gen2_0_cpu_nios2_oci
+  exponent_accelerator_nios2_gen2_0_cpu_nios2_oci the_exponent_accelerator_nios2_gen2_0_cpu_nios2_oci
     (
       .D_valid                             (D_valid),
       .E_st_data                           (E_st_data),

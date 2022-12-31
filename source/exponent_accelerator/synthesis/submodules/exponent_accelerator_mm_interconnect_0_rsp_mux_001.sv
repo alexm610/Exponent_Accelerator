@@ -38,7 +38,7 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         Exponent_accelerator_mm_interconnect_0_rsp_mux_001
+//   output_name:         exponent_accelerator_mm_interconnect_0_rsp_mux_001
 //   NUM_INPUTS:          2
 //   ARBITRATION_SHARES:  1 1
 //   ARBITRATION_SCHEME   "no-arb"
@@ -48,7 +48,7 @@
 //   ST_CHANNEL_W:        11
 // ------------------------------------------
 
-module Exponent_accelerator_mm_interconnect_0_rsp_mux_001
+module exponent_accelerator_mm_interconnect_0_rsp_mux_001
 (
     // ----------------------
     // Sinks

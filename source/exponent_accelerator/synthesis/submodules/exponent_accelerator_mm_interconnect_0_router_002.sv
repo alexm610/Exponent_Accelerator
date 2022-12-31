@@ -42,7 +42,7 @@
 
 `timescale 1 ns / 1 ns
 
-module Exponent_accelerator_mm_interconnect_0_router_002_default_decode
+module exponent_accelerator_mm_interconnect_0_router_002_default_decode
   #(
      parameter DEFAULT_CHANNEL = 0,
                DEFAULT_WR_CHANNEL = -1,
@@ -81,7 +81,7 @@ module Exponent_accelerator_mm_interconnect_0_router_002_default_decode
 endmodule
 
 
-module Exponent_accelerator_mm_interconnect_0_router_002
+module exponent_accelerator_mm_interconnect_0_router_002
 (
     // -------------------
     // Clock & Reset
@@ -165,7 +165,7 @@ module Exponent_accelerator_mm_interconnect_0_router_002
 
 
 
-    Exponent_accelerator_mm_interconnect_0_router_002_default_decode the_default_decode(
+    exponent_accelerator_mm_interconnect_0_router_002_default_decode the_default_decode(
       .default_destination_id (),
       .default_wr_channel   (),
       .default_rd_channel   (),

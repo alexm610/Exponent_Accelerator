@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport
- name="Exponent_accelerator"
- kind="Exponent_accelerator"
+ name="exponent_accelerator"
+ kind="exponent_accelerator"
  version="1.0"
  fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.12.30.01:50:59 -->
+ <!-- 2022.12.30.15:55:31 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1672393859</value>
+  <value>1672444530</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -10687,7 +10687,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -10751,7 +10751,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -10963,7 +10963,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -11038,7 +11038,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>Exponent_accelerator_onchip_memory2_0.hex</value>
+   <value>exponent_accelerator_onchip_memory2_0.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>

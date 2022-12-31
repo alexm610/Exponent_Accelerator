@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport
- name="Exponent_accelerator"
+ name="exponent_accelerator"
  kind="system"
  version="19.1"
  fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.12.30.01:51:44 -->
+ <!-- 2022.12.30.15:56:16 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -57,7 +57,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1672393859</value>
+  <value>1672444530</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -10675,7 +10675,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_CONTENTS_FILE</name>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INIT_MEM_CONTENT</name>
@@ -10739,7 +10739,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
   </assignment>
   <assignment>
    <name>postgeneration.simulation.init_file.param_name</name>
@@ -10951,7 +10951,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="autoInitializationFileName">
    <type>java.lang.String</type>
-   <value>Exponent_accelerator_onchip_memory2_0</value>
+   <value>exponent_accelerator_onchip_memory2_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -11026,7 +11026,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_init_file_name">
    <type>java.lang.String</type>
-   <value>Exponent_accelerator_onchip_memory2_0.hex</value>
+   <value>exponent_accelerator_onchip_memory2_0.hex</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -18899,5 +18899,5 @@ parameters are a RESULT of the module parameters. -->
   <version>19.1</version>
  </plugin>
  <reportVersion>19.1 670</reportVersion>
- <uniqueIdentifier>C6B301CADEC50000018562713FBB</uniqueIdentifier>
+ <uniqueIdentifier>C6B301CADEC50000018565766F16</uniqueIdentifier>
 </EnsembleReport>

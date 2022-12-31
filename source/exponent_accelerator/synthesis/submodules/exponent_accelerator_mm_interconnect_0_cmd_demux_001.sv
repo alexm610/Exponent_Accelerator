@@ -27,7 +27,7 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         Exponent_accelerator_mm_interconnect_0_cmd_demux_001
+//   output_name:         exponent_accelerator_mm_interconnect_0_cmd_demux_001
 //   ST_DATA_W:           92
 //   ST_CHANNEL_W:        11
 //   NUM_OUTPUTS:         2
@@ -40,7 +40,7 @@
 // 15610 - Warning: Design contains x input pin(s) that do not drive logic
 //------------------------------------------
 
-module Exponent_accelerator_mm_interconnect_0_cmd_demux_001
+module exponent_accelerator_mm_interconnect_0_cmd_demux_001
 (
     // -------------------
     // Sink

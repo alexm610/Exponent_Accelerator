@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper (
+module exponent_accelerator_nios2_gen2_0_cpu_debug_slave_wrapper (
                                                                    // inputs:
                                                                     MonDReg,
                                                                     break_readreg,
@@ -121,7 +121,7 @@ wire             vji_uir;
   //switch between a regular Nios II or an internally embedded Nios II.
   //For a regular Nios II, sld_mfg_id = 70, sld_type_id = 34.
   //For an internally embedded Nios II, slf_mfg_id = 110, sld_type_id = 135.
-  Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck
+  exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_tck
     (
       .MonDReg            (MonDReg),
       .break_readreg      (break_readreg),
@@ -156,7 +156,7 @@ wire             vji_uir;
       .vs_uir             (vji_uir)
     );
 
-  Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk the_Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk
+  exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk the_exponent_accelerator_nios2_gen2_0_cpu_debug_slave_sysclk
     (
       .clk                     (clk),
       .ir_in                   (vji_ir_in),
@@ -192,7 +192,7 @@ wire             vji_uir;
 
 //synthesis translate_on
 //synthesis read_comments_as_HDL on
-//  sld_virtual_jtag_basic Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy
+//  sld_virtual_jtag_basic exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy
 //    (
 //      .ir_in (vji_ir_in),
 //      .ir_out (vji_ir_out),
@@ -206,15 +206,15 @@ wire             vji_uir;
 //      .virtual_state_uir (vji_uir)
 //    );
 //
-//  defparam Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_auto_instance_index = "YES",
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_instance_index = 0,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_ir_width = 2,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_mfg_id = 70,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_action = "",
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_n_scan = 0,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_total_length = 0,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_type_id = 34,
-//           Exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_version = 3;
+//  defparam exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_auto_instance_index = "YES",
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_instance_index = 0,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_ir_width = 2,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_mfg_id = 70,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_action = "",
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_n_scan = 0,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_sim_total_length = 0,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_type_id = 34,
+//           exponent_accelerator_nios2_gen2_0_cpu_debug_slave_phy.sld_version = 3;
 //
 //synthesis read_comments_as_HDL off
 

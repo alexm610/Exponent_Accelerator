@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module Exponent_accelerator_nios2_gen2_0_cpu_test_bench (
+module exponent_accelerator_nios2_gen2_0_cpu_test_bench (
                                                           // inputs:
                                                            D_iw,
                                                            D_iw_op,
@@ -446,7 +446,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(F_valid) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/F_valid is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/F_valid is 'x'\n", $time);
               $stop;
             end
     end
@@ -457,7 +457,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(D_valid) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/D_valid is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/D_valid is 'x'\n", $time);
               $stop;
             end
     end
@@ -468,7 +468,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(E_valid) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/E_valid is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/E_valid is 'x'\n", $time);
               $stop;
             end
     end
@@ -479,7 +479,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(W_valid) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_valid is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_valid is 'x'\n", $time);
               $stop;
             end
     end
@@ -493,7 +493,7 @@ wire             test_has_ended;
       else if (W_valid)
           if (^(R_wr_dst_reg) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/R_wr_dst_reg is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/R_wr_dst_reg is 'x'\n", $time);
               $stop;
             end
     end
@@ -507,7 +507,7 @@ wire             test_has_ended;
       else if (W_valid & R_wr_dst_reg)
           if (^(W_wr_data) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_wr_data is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_wr_data is 'x'\n", $time);
               $stop;
             end
     end
@@ -521,7 +521,7 @@ wire             test_has_ended;
       else if (W_valid & R_wr_dst_reg)
           if (^(R_dst_regnum) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/R_dst_regnum is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/R_dst_regnum is 'x'\n", $time);
               $stop;
             end
     end
@@ -532,7 +532,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(d_write) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_write is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_write is 'x'\n", $time);
               $stop;
             end
     end
@@ -546,7 +546,7 @@ wire             test_has_ended;
       else if (d_write)
           if (^(d_byteenable) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_byteenable is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_byteenable is 'x'\n", $time);
               $stop;
             end
     end
@@ -560,7 +560,7 @@ wire             test_has_ended;
       else if (d_write | d_read)
           if (^(d_address) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_address is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_address is 'x'\n", $time);
               $stop;
             end
     end
@@ -571,7 +571,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(d_read) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_read is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/d_read is 'x'\n", $time);
               $stop;
             end
     end
@@ -582,7 +582,7 @@ wire             test_has_ended;
       if (reset_n)
           if (^(i_read) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_read is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_read is 'x'\n", $time);
               $stop;
             end
     end
@@ -596,7 +596,7 @@ wire             test_has_ended;
       else if (i_read)
           if (^(i_address) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_address is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_address is 'x'\n", $time);
               $stop;
             end
     end
@@ -610,7 +610,7 @@ wire             test_has_ended;
       else if (i_read & ~i_waitrequest)
           if (^(i_readdata) === 1'bx)
             begin
-              $write("%0d ns: ERROR: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_readdata is 'x'\n", $time);
+              $write("%0d ns: ERROR: exponent_accelerator_nios2_gen2_0_cpu_test_bench/i_readdata is 'x'\n", $time);
               $stop;
             end
     end
@@ -624,7 +624,7 @@ wire             test_has_ended;
       else if (W_valid & R_ctrl_ld)
           if (^(av_ld_data_aligned_unfiltered) === 1'bx)
             begin
-              $write("%0d ns: WARNING: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/av_ld_data_aligned_unfiltered is 'x'\n", $time);
+              $write("%0d ns: WARNING: exponent_accelerator_nios2_gen2_0_cpu_test_bench/av_ld_data_aligned_unfiltered is 'x'\n", $time);
             end
     end
 
@@ -637,7 +637,7 @@ wire             test_has_ended;
       else if (W_valid & R_wr_dst_reg)
           if (^(W_wr_data) === 1'bx)
             begin
-              $write("%0d ns: WARNING: Exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_wr_data is 'x'\n", $time);
+              $write("%0d ns: WARNING: exponent_accelerator_nios2_gen2_0_cpu_test_bench/W_wr_data is 'x'\n", $time);
             end
     end
 
