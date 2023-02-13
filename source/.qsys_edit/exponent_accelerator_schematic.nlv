@@ -1,8 +1,34 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
-preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)unsaved.reset) 1 0 1 NJ
-levelinfo -pg 1 0 50 270
-levelinfo -hier unsaved 60 90 260
+preplace inst exponent_accelerator.HEX3 -pg 1 -lvl 3 -y 430
+preplace inst exponent_accelerator.onchip_memory2_0 -pg 1 -lvl 3 -y 350
+preplace inst exponent_accelerator.HEX4 -pg 1 -lvl 3 -y 530
+preplace inst exponent_accelerator -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst exponent_accelerator.nios2_gen2_0.cpu -pg 1
+preplace inst exponent_accelerator.HEX5 -pg 1 -lvl 3 -y 630
+preplace inst exponent_accelerator.jtag_uart_0 -pg 1 -lvl 3 -y 150
+preplace inst exponent_accelerator.nios2_gen2_0.clock_bridge -pg 1
+preplace inst exponent_accelerator.nios2_gen2_0 -pg 1 -lvl 2 -y 140
+preplace inst exponent_accelerator.SW -pg 1 -lvl 3 -y 830
+preplace inst exponent_accelerator.LEDR -pg 1 -lvl 3 -y 730
+preplace inst exponent_accelerator.nios2_gen2_0.reset_bridge -pg 1
+preplace inst exponent_accelerator.HEX0 -pg 1 -lvl 3 -y 30
+preplace inst exponent_accelerator.clk_0 -pg 1 -lvl 1 -y 80
+preplace inst exponent_accelerator.HEX1 -pg 1 -lvl 3 -y 250
+preplace inst exponent_accelerator.HEX2 -pg 1 -lvl 3 -y 930
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)exponent_accelerator.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)exponent_accelerator.hex1,(SLAVE)HEX1.external_connection) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc POINT_TO_POINT<net_container>exponent_accelerator</net_container>(SLAVE)jtag_uart_0.irq,(MASTER)nios2_gen2_0.irq) 1 2 1 700
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)HEX5.external_connection,(SLAVE)exponent_accelerator.hex5) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)HEX2.external_connection,(SLAVE)exponent_accelerator.hex2) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)exponent_accelerator.hex0,(SLAVE)HEX0.external_connection) 1 0 3 NJ 40 NJ 40 NJ
+preplace netloc FAN_OUT<net_container>exponent_accelerator</net_container>(SLAVE)LEDR.clk,(SLAVE)HEX1.clk,(SLAVE)HEX5.clk,(SLAVE)SW.clk,(SLAVE)HEX2.clk,(SLAVE)jtag_uart_0.clk,(MASTER)clk_0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)HEX4.clk,(SLAVE)HEX0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)HEX3.clk) 1 1 2 260 60 720
+preplace netloc INTERCONNECT<net_container>exponent_accelerator</net_container>(MASTER)clk_0.clk_reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)SW.reset,(SLAVE)HEX2.reset,(SLAVE)HEX3.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)HEX1.reset,(SLAVE)HEX5.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)LEDR.reset,(SLAVE)HEX0.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)HEX4.reset) 1 1 2 280 80 680
+preplace netloc INTERCONNECT<net_container>exponent_accelerator</net_container>(SLAVE)HEX0.s1,(SLAVE)HEX4.s1,(SLAVE)SW.s1,(MASTER)nios2_gen2_0.data_master,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)HEX5.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)HEX2.s1,(SLAVE)HEX3.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)LEDR.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)HEX1.s1) 1 1 2 300 100 660
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)exponent_accelerator.switch,(SLAVE)SW.external_connection) 1 0 3 NJ 860 NJ 860 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)LEDR.external_connection,(SLAVE)exponent_accelerator.ledr) 1 0 3 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)HEX3.external_connection,(SLAVE)exponent_accelerator.hex3) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)HEX4.external_connection,(SLAVE)exponent_accelerator.hex4) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>exponent_accelerator</net_container>(SLAVE)exponent_accelerator.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+levelinfo -pg 1 0 50 930
+levelinfo -hier exponent_accelerator 60 90 420 770 920

@@ -16,3 +16,9 @@ DECEMBER 30, 2022
             - In the accompanying C program, the value on the switches will be placed at the base address of the custom component, the component will perform its computation, 
                 and then place the output at the next word in memory (base_address_custom_component + 0x4)
     - The current .QSYS project 
+
+JANUARY 2, 2023
+    - Begin testing a simple, custom IP component to implement within Platform Designer. The simple module will perfom a logical shift left on the input data. 
+    
+FEBRUARY 13, 2023
+    - Continuing off of last work; re-writing the custom IP component for correctness

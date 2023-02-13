@@ -9,7 +9,7 @@
    <inputclock preferredWidth="192" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Interface Protocols,Library,Project,Library/Interface Protocols/Serial" />
- <window width="2576" height="1416" x="-3848" y="-1123" />
+ <library expandedCategories="Project,Library,Project/alexmanak" />
+ <window width="2586" height="1546" x="-13" y="-13" />
+ <hdlexample language="VERILOG" />
 </preferences>
