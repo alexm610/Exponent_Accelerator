@@ -22,3 +22,10 @@ JANUARY 2, 2023
     
 FEBRUARY 13, 2023
     - Continuing off of last work; re-writing the custom IP component for correctness
+
+FEBRUARY 21, 2023
+    - VGA_avalon wrapper works, and we can now print the dog on the screen. Unfortunately, this system with accompanying software does not use byte offsets
+        - The x-coordinate, y-coordinate, and (greyscale) colour are all encoded in the first word at the memory location of the VGA component.
+    - The "write" input signal is mysterious to me; I am unsure as to how this signal is triggered by the software. However, from my research it appears that the "address" input line 
+        to the memory-mapped VGA slave is automatically set by the software when the software writes a value to a memory location that is associated with the slave in question
+    - Tomorrow, I will implement a simple version of my exponent_accelerator that utilizes byte word offsets, puts them on the output bus which will be connected to peripherals. 

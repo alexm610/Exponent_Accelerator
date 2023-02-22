@@ -1,29 +1,10 @@
 `timescale 1ps/1ps
 
-module exponent_accelerator (clock, reset_n, writedata, write, readdata, address, conduit_export);
-    input logic clock, reset_n, write;
-    input logic [31:0] writedata;
-    input logic [23:0] address;
-    output logic [31:0] readdata;
-    output logic [31:0] conduit_export;
-    enum {START} state;
-
-    always @(posedge clock) begin
-        if (!reset_n) begin
-            state <= START;
-            readdata <= 32'd0;
-            //address <= 24'd0;
-        end else begin
-            case (state)
-                START: begin
-                    conduit_export <= writedata << 1'b1;
-                    state <= START;
-                    readdata <= writedata << 1'b1;
-                    //address <= 24'd2;
-                end
-            endcase
-        end
-    end
+module exponent_accelerator (input logic clk, input logic reset_n,
+                  input logic [3:0] address,
+                  input logic read, output logic [31:0] readdata,
+                  input logic write, input logic [31:0] writedata, output logic [7:0] exp_out);
+    
 endmodule: exponent_accelerator
 
 /*
