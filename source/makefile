@@ -28,7 +28,7 @@ OCFLAGS		:= -O srec
 
 # Files
 HDRS		:=
-SRCS		:= main.c vga_plot.c
+SRCS		:= main.c vga_plot.c sw2hex.c
 OBJS		:= $(patsubst %, %.o, $(SRCS))
 
 # Targets

@@ -25,10 +25,14 @@ int main() {
 	}
 
 	sprintf(STRING_LOCATION + 16, "Hello Dog!");
+
+	while (1) {
+		sw_to_hex_leds();
+	}
 }
 
 /*
-Following loop prints stripes:
+stripe printing loop:
 
 	for (y = 0; y < 60; y++) {
 		for (x = 0; x < 80; x++) {
