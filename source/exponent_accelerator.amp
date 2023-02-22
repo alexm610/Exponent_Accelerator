@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><intel_fpga_monitor_program_project version="1.0">
     <architecture>Nios II</architecture>
     <system>
-        <system_info filepath="true">exponent_accelerator.sopcinfo</system_info>
+        <system_info filepath="true">exponent_accelerator_system.sopcinfo</system_info>
         <system_sof filepath="true">output_files/exponent_interface.sof</system_sof>
         <board>Not Required</board>
         <cable>DE-SoC [USB-1]</cable>
@@ -12,8 +12,8 @@
     <program>
         <type>C Program</type>
         <source_files>
-            <source_file filepath="true">sw2hex.c</source_file>
-            <source_file filepath="true">amp/lib/src/niosII_jtag_uart.c</source_file>
+            <source_file filepath="true">main.c</source_file>
+            <source_file filepath="true">vga_plot.c</source_file>
         </source_files>
         <options>
             <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline -mno-cache-volatile</compiler_flags>
@@ -23,8 +23,8 @@
         <linker_sections type="Basic">
             <linker_section name=".text">
                 <memory_device>onchip_memory2_0.s1</memory_device>
-                <base_address>0x00000000</base_address>
-                <end_address>0x00000FFF</end_address>
+                <base_address>0x00008000</base_address>
+                <end_address>0x0000FFFF</end_address>
                 <required_section/>
             </linker_section>
         </linker_sections>

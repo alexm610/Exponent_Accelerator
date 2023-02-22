@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 #define switches (volatile char*) 0x2070
 #define hex0     (char*)          0x2050
 #define hex1     (char*)          0x2040
@@ -9,7 +7,7 @@
 #define hex5     (char*)          0x2000
 #define leds     (char*)          0x2060
 
-void main()
+void sw_to_hex()
 {
     while(1)
     {

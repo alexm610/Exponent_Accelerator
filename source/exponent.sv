@@ -1,6 +1,6 @@
 `timescale 1ps/1ps
 
-module exponenet (clock, reset_n, writedata, write, readdata, address, conduit_export);
+module exponent_accelerator (clock, reset_n, writedata, write, readdata, address, conduit_export);
     input logic clock, reset_n, write;
     input logic [31:0] writedata;
     input logic [23:0] address;
@@ -24,7 +24,7 @@ module exponenet (clock, reset_n, writedata, write, readdata, address, conduit_e
             endcase
         end
     end
-endmodule: exponenet
+endmodule: exponent_accelerator
 
 /*
 module exponent (clock, reset_n, enable, x, a, p, ready); 

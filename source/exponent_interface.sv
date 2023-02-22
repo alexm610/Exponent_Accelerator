@@ -1,21 +1,39 @@
-`timescale 1ps/1ps  
-
-module exponent_interface (CLOCK_50, SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
-    input logic CLOCK_50;
-    input logic [3:0] KEY;
-    input logic [9:0] SW;
-    output logic [9:0] LEDR;
-    output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
-
-    exponent_accelerator EXP (
-        .clk_clk       (CLOCK_50),
-        .hex0_export   (HEX0),
-        .hex1_export   (HEX1),
-        .hex2_export   (HEX2),
-        .hex3_export   (HEX3),
-        .hex4_export   (HEX4),
-        .hex5_export   (HEX5),
-        .ledr_export   (LEDR),
-        .reset_reset_n (KEY[3]),
-        .switch_export (SW));
+module exponent_interface (input logic CLOCK_50, input logic [3:0] KEY, // KEY[3] is async active-low reset
+             input logic [9:0] SW, output logic [9:0] LEDR,
+             output logic [7:0] VGA_R, output logic [7:0] VGA_G, output logic [7:0] VGA_B,
+             output logic VGA_HS, output logic VGA_VS, output logic VGA_CLK,
+             output logic DRAM_CLK, output logic DRAM_CKE,
+             output logic DRAM_CAS_N, output logic DRAM_RAS_N, output logic DRAM_WE_N,
+             output logic [12:0] DRAM_ADDR, output logic [1:0] DRAM_BA, output logic DRAM_CS_N,
+             inout logic [15:0] DRAM_DQ, output logic DRAM_UDQM, output logic DRAM_LDQM,
+             output logic [6:0] HEX0, output logic [6:0] HEX1, output logic [6:0] HEX2,
+             output logic [6:0] HEX3, output logic [6:0] HEX4, output logic [6:0] HEX5);
+    assign LEDR[8] = 0;
+    exponent_accelerator_system EXP (.clk_clk(CLOCK_50), 
+        .reset_reset_n(KEY[3]),
+        .pll_locked_export(LEDR[9]),
+        .vga_vga_red(VGA_R),
+        .vga_vga_grn(VGA_G),
+        .vga_vga_blu(VGA_B),
+        .vga_vga_hsync(VGA_HS),
+        .vga_vga_vsync(VGA_VS),
+        .vga_vga_clk(VGA_CLK),
+        .sdram_clk_clk(DRAM_CLK),
+        .sdram_addr(DRAM_ADDR),
+        .sdram_ba(DRAM_BA),
+        .sdram_cas_n(DRAM_CAS_N),
+        .sdram_cke(DRAM_CKE),
+        .sdram_cs_n(DRAM_CS_N),
+        .sdram_dq(DRAM_DQ),
+        .sdram_dqm({DRAM_UDQM, DRAM_LDQM}),
+        .sdram_ras_n(DRAM_RAS_N),
+        .sdram_we_n(DRAM_WE_N),
+        .hex0_export(HEX0),
+        .hex1_export(HEX1),
+        .hex2_export(HEX2),
+        .hex3_export(HEX3),
+        .hex4_export(HEX4),
+        .hex5_export(HEX5),
+        .switch_export(SW[7:0]),
+        .ledr_export(LEDR[7:0]));
 endmodule: exponent_interface

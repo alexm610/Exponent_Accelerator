@@ -1,10 +1,12 @@
+/*#include <stdio.h>
+
 #define accelerator_base (volatile int *) 0x2
 #define ACC_OFFSET_x 0
 #define ACC_OFFSET_a 4
 #define ACC_OFFSET_p 8
 #define ACC_OFFSET_rd 12
 
-void main (void) 
+void exponent (void) 
 {
     // set the read signal (to be read by the module) low to start off
     *(accelerator_base + ACC_OFFSET_rd) = 0x0;
@@ -28,4 +30,4 @@ void main (void)
 
     // print the computed value
     printf("%d ^ %d = %d\r\n", *(accelerator_base + ACC_OFFSET_x), *(accelerator_base + ACC_OFFSET_a), *(accelerator_base + ACC_OFFSET_p));
-}
+}*/
