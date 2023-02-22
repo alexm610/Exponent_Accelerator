@@ -29,3 +29,4 @@ FEBRUARY 21, 2023
     - The "write" input signal is mysterious to me; I am unsure as to how this signal is triggered by the software. However, from my research it appears that the "address" input line 
         to the memory-mapped VGA slave is automatically set by the software when the software writes a value to a memory location that is associated with the slave in question
     - Tomorrow, I will implement a simple version of my exponent_accelerator that utilizes byte word offsets, puts them on the output bus which will be connected to peripherals. 
+    

@@ -1,13 +1,23 @@
 `timescale 1ps/1ps
 
+/*
+    This module should instantiate the workhorse module below. It should have a state machine that waits for the 
+    values "x", "a", and "p" to be written to writedata at different addresses. Each of those values are to be written
+    to the memory location of this slave at increasing byte offsets.
+*/
 module exponent_accelerator (input logic clk, input logic reset_n,
                   input logic [3:0] address,
                   input logic read, output logic [31:0] readdata,
-                  input logic write, input logic [31:0] writedata, output logic [7:0] exp_out);
+                  input logic write, input logic [31:0] writedata, 
+                  output logic [7:0] exp_out_ledr, output logic [7:0] exp_out_hex);
+
     
+
+
 endmodule: exponent_accelerator
 
-/*
+//  instantiate this module in the above main module; this module uses a ready/enable microprotocol 
+//      and thus can be re-triggered by the above controlling module
 module exponent (clock, reset_n, enable, x, a, p, ready); 
     input logic clock, reset_n, enable;
     input logic [31:0] x, a;
@@ -58,4 +68,3 @@ module exponent (clock, reset_n, enable, x, a, p, ready);
         endcase
     end
 endmodule: exponent
-*/
