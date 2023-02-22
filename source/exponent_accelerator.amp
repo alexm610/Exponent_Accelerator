@@ -14,6 +14,7 @@
         <source_files>
             <source_file filepath="true">main.c</source_file>
             <source_file filepath="true">vga_plot.c</source_file>
+            <source_file filepath="true">sw2hex.c</source_file>
         </source_files>
         <options>
             <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline -mno-cache-volatile</compiler_flags>
