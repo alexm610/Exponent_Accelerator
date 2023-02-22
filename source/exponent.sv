@@ -9,7 +9,7 @@ module exponent_accelerator (input logic clk, input logic reset_n,
                   input logic [3:0] address,
                   input logic read, output logic [31:0] readdata,
                   input logic write, input logic [31:0] writedata, 
-                  output logic [7:0] exp_out_ledr, output logic [7:0] exp_out_hex);
+                  output logic [7:0] exp_ledr, output logic [7:0] exp_hex);
 
     
 
